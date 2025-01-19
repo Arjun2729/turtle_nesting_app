@@ -1,4 +1,4 @@
-// lib/screens/login_screen.dart
+
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import '../database/firebase_service.dart';
@@ -48,7 +48,7 @@ class _LoginScreenState extends State<LoginScreen> {
       );
       return;
     }
-    // pass walkType, startDate, endDate
+
     final walkData = {
       'walkType': _walkType,
       'startDate': _startDateCtrl.text,
