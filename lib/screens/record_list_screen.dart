@@ -1,4 +1,4 @@
-// lib/screens/record_list_screen.dart
+
 import 'package:flutter/material.dart';
 import '../database/firebase_service.dart';
 import 'record_detail_screen.dart';
@@ -24,7 +24,7 @@ class _RecordListScreenState extends State<RecordListScreen> {
 
   Future<void> _loadRecords() async {
     final all = await FirebaseService().queryRecords();
-    // Filter by walkDocId and category
+
     final filtered = all.where((r) {
       final sameWalk = (r['walkDocId'] == widget.walkDocId);
       final sameCat = (widget.category == r['category']);
