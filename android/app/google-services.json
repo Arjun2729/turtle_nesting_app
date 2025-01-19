@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "956348551175",
+    "project_id": "olive-9c9f0",
+    "storage_bucket": "olive-9c9f0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956348551175:android:80aca379e64dc6f861daa2",
+        "android_client_info": {
+          "package_name": "com.example.turtle_nesting_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfCzXmX-IepGOHovvRDZ_cW9n1bSVlQUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

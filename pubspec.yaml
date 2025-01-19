@@ -1,0 +1,46 @@
+name: turtle_nesting_app
+description: A Flutter project for turtle nesting data collection
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^2.13.0
+  cloud_firestore: ^4.17.5
+
+  # Geolocator + Maps
+  geolocator: ^9.0.2
+  google_maps_flutter: ^2.2.5
+
+  # CSV/Excel conversion
+  csv: ^5.1.1
+  excel: ^2.1.0
+
+  # For date/time formatting
+  intl: ^0.18.0
+
+  # Path + path_provider for saving to app directory
+  path: ^1.9.0
+  path_provider: ^2.0.15
+
+  # share_plus for sharing files
+  share_plus: ^10.1.4
+
+  # Permission handler only for location (if needed)
+  permission_handler: ^10.4.5
+
+  cupertino_icons: ^1.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true

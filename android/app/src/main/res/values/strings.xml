@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    <string name="app_name">turtle_nesting_app</string>
+
+    <!-- Add this line (paste your actual client ID from Google Cloud) -->
+    <string name="default_web_client_id">1234567890-abcdefghij.apps.googleusercontent.com</string></resources>

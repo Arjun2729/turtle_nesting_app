@@ -1,0 +1,26 @@
+# Flutter/Dart/Pub related
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter/
+.metadata
+.packages
+pubspec.lock
+
+# Build outputs
+/build/
+/ios/Flutter/App.framework
+/ios/Flutter/Flutter.framework
+/ios/Flutter/Generated.xcconfig
+/ios/Runner/GeneratedPluginRegistrant.*
+/android/app/app.iml
+
+# Android Studio
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
