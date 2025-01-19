@@ -1,4 +1,4 @@
-// lib/screens/query_screen.dart
+
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -22,11 +22,11 @@ class _QueryScreenState extends State<QueryScreen> {
   Set<Marker> _markers = {};
   LatLng _initialPos = const LatLng(12.9789, 80.2508);
 
-  // Only date filters remain.
+
   final TextEditingController _startDateCtrl = TextEditingController();
   final TextEditingController _endDateCtrl = TextEditingController();
 
-  // This list will hold all unique keys from the returned records (to build the table dynamically).
+
   List<String> _allKeys = [];
 
   @override
@@ -86,7 +86,7 @@ class _QueryScreenState extends State<QueryScreen> {
   }
 
   Widget _buildFilters() {
-    // Only include start and end date filters.
+
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Row(
@@ -132,7 +132,7 @@ class _QueryScreenState extends State<QueryScreen> {
     final String startDate = _startDateCtrl.text;
     final String endDate = _endDateCtrl.text;
 
-    // Call queryRecords with only date filters. The walkType and category filters are omitted.
+
     final results = await FirebaseService().queryRecords(
       startDate: startDate,
       endDate: endDate,
@@ -144,7 +144,7 @@ class _QueryScreenState extends State<QueryScreen> {
     _markers.clear();
 
     if (_records.isNotEmpty) {
-      // Set map initial position to the first record, if available.
+
       final first = _records.first;
       double lat = 12.9789, lng = 80.2508;
       if (first['latitude'] is num) {
@@ -171,7 +171,7 @@ class _QueryScreenState extends State<QueryScreen> {
       }
     }
 
-    // Gather all keys for the dynamic DataTable.
+
     final allKeys = <String>{};
     for (var rec in _records) {
       allKeys.addAll(rec.keys);
