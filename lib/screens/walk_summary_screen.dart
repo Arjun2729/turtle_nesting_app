@@ -1,4 +1,4 @@
-// lib/screens/walk_summary_screen.dart
+
 import 'package:flutter/material.dart';
 import '../database/firebase_service.dart';
 import 'record_list_screen.dart';
