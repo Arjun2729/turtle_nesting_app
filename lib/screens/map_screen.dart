@@ -1,4 +1,4 @@
-// lib/screens/map_screen.dart
+
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:geolocator/geolocator.dart';
@@ -46,7 +46,7 @@ class _MapScreenState extends State<MapScreen> {
   }
 
   Future<void> _loadMarkers() async {
-    // Query all records for this walk
+
     final records = await FirebaseService().queryRecords();
     final filtered = records.where((r) => r['walkDocId'] == widget.walkDocId);
 
