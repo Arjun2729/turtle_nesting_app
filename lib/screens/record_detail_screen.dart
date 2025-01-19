@@ -1,4 +1,4 @@
-// lib/screens/record_detail_screen.dart
+
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
@@ -18,7 +18,7 @@ class RecordDetailScreen extends StatelessWidget {
     }
     final pos = LatLng(lat, lng);
 
-    // gather all keys
+
     final sortedKeys = record.keys.toList()..sort();
 
     return Scaffold(
@@ -33,7 +33,7 @@ class RecordDetailScreen extends StatelessWidget {
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
-            // display each key/value
+
             ...sortedKeys.map((k) {
               final val = record[k];
               return Text('$k: $val');
