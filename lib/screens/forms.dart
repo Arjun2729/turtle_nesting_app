@@ -78,7 +78,7 @@ class _DeadTurtleFormScreenState extends State<DeadTurtleFormScreen> {
       return;
     }
     final record = {
-      // Insert everything the user typed
+
       'date': _date,
       'time': _time,
       'latitude': _latitude,
@@ -91,7 +91,7 @@ class _DeadTurtleFormScreenState extends State<DeadTurtleFormScreen> {
       'sex': _sexCtrl.text,
       'remarks': _remarksCtrl.text,
 
-      // Category for this form
+
       'category': 'turtle_death',
 
       // CRITICAL: pass the walkDocId so firebase_service can fetch the walk type
@@ -113,7 +113,7 @@ class _DeadTurtleFormScreenState extends State<DeadTurtleFormScreen> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          // date/time/coords at top
+
           Text('Date: $_date'),
           Text('Time: $_time'),
           Text('GPS: ${_latitude ?? '??'}, ${_longitude ?? '??'}'),
@@ -351,7 +351,7 @@ class _NestFindFormScreenState extends State<NestFindFormScreen> {
       'longitude': _longitude,
 
       'nestNo': _nestNoCtrl.text,
-      'walk': _walkTypeCtrl.text, // if user typed Bessie or Marina manually
+      'walk': _walkTypeCtrl.text, 
       'nestLocation': _nestLocationCtrl.text,
       'distanceHtl': _distanceHtlCtrl.text,
       'measurementsOfTurtle': _measurementsCtrl.text,
